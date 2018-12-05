@@ -18,7 +18,7 @@ All you need for this is the following line of code:
                                 "Previous experience",
                                 "Preferred department",
                                 "Preferred programming languages"
-                            ]}/>
+                        ]}/>
 ```
 
 ## Development options
