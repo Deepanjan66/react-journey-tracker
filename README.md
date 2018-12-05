@@ -11,7 +11,7 @@ have been colored with a ligher shade of blue.
 
 All you need for this is the following line of code:
 
-```
+```jsx
  <ProgressGraph stages={[
                                 "Personal details",
                                 "Education details",
