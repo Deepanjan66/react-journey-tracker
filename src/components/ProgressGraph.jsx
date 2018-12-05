@@ -9,14 +9,15 @@ import './ProgressGraph.css';
 class ProgressGraph extends Component {
     constructor(props) {
         super(props);
-        this.state = {  
-            stages: ["Name","Address","Phone number","University", "Sections", "De","Something"],
+        this.state = {
+            // Used to keep track of the stage
+            // the user is currently at
             currentStage: 3
         }
     }
 
     addIntermediaryEdge(index) {
-        if ((index+1) < this.state.stages.length) return "intermediate";
+        if ((index+1) < this.props.stages.length) return "react_journey__intermediate";
         return "";
     }
 
@@ -36,8 +37,8 @@ class ProgressGraph extends Component {
 
     render() { 
         return (  
-            <div className="progress-graph">
-                {this.state.stages.map((stage, index) => 
+            <div className="react_journey__progress-graph">
+                {this.props.stages.map((stage, index) => 
                     (<Node 
                         key={index}
                         stage={index+1} 

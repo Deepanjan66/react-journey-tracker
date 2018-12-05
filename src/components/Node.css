@@ -1,25 +1,32 @@
-.node {
+.react_journey__node {
     border: 10px solid #52ADC8;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     float: left;
     margin-top: 10px;
     margin-left: 50px;
     text-align: center;
-    line-height: 450%;
+    line-height: 320%;
     display:inline-block;
     position: relative;
+    background-color: hsl(0, 16%, 91%);
 }
 
-.node a {
-    color: black;
+.react_journey__node a {
+    color: #282c34;
     text-decoration: none;
     font-family: 'Arial', Courier, monospace;
     font-size: 30px;
+    pointer-events: none;
 }
 
-.intermediate::after {
+.react_journey__node p {
+    color: white;
+    line-height: 20px;
+}
+
+.react_journey__intermediate::after {
     content: "";
     display: inline-block;
     position: absolute;
@@ -27,23 +34,23 @@
     width: 52px;
     z-index: -1;
     top: 45%;
-    left: 80px;
+    left: 50px;
     /*left: 69%;*/
 }
 
-.done {
+.react_journey__done {
     background-color: #55C39E;
-    border: 10px solid #55C39E;
+    border: 10px solid rgb(66, 219, 168);
 }
 
-.done::after {
+.react_journey__done::after {
     border: 4px solid #55C39E;    
 }
 
-.current {
+.react_journey__current {
     border: 10px solid #387CA3;
 }
 
-.current::after {
+.react_journey__current::after {
     border: 4px solid #387CA3;
 }
