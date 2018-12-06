@@ -5,11 +5,11 @@ for journey tracking.
 
 ![Sample example](http://funkyimg.com/i/2NSGR.png "Sample example")
 
-Here, we define a generic job application workflow with `react_journey_tracker` (this is a screenshot taking from the current working version).
+Here, we define a generic job application workflow with `react_journey_tracker` (this is a screenshot taken from the current working version).
 The green nodes represent the steps that have been completed. The darker shade of blue represents the step the user is currently at. The remaining steps
 have been colored with a ligher shade of blue.
 
-All you need for this is the following line of code:
+All you need for this is the following line(s) of code:
 
 ```jsx
  <ProgressGraph stages={[
