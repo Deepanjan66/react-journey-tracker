@@ -3,15 +3,15 @@
 This is a generic journey tracker written in react. You can plug this into your codebase if you require a quick solution
 for journey tracking.
 
-![Sample example](journey.gif "Sample example")
+![Sample example](http://funkyimg.com/i/2NSGR.png "Sample example")
 
-Here, we define a generic job application workflow with `react_journey_tracker` (this is a screenshot taking from the current working version).
+Here, we define a generic job application workflow with `react_journey_tracker` (this is a screenshot taken from the current working version).
 The green nodes represent the steps that have been completed. The darker shade of blue represents the step the user is currently at. The remaining steps
 have been colored with a ligher shade of blue.
 
-All you need for this is the following line of code:
+All you need for this is the following line(s) of code:
 
-```
+```jsx
  <progressgraph stages={[
                                 "personal details",
                                 "education details",
@@ -24,7 +24,7 @@ All you need for this is the following line of code:
 
 In your react app, it would look something like the following:
 
-```
+```jsx
 <ProgressGraph  stages={this.state.stages}
                         currStage={1}
                         />
@@ -66,9 +66,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
