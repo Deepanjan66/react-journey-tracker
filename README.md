@@ -3,7 +3,7 @@
 This is a generic journey tracker written in react. You can plug this into your codebase if you require a quick solution
 for journey tracking.
 
-Example shown in `App.js`. 
+Example shown in `App.js`. There are no dependencies. The tracker has been styled with custom css.
 
 ![Sample example](journey.gif "Sample example")
 
