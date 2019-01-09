@@ -12,22 +12,23 @@ have been colored with a ligher shade of blue.
 All you need for this is the following line(s) of code:
 
 ```jsx
- <progressgraph stages={[
+ <ProgressGraph stages={[
                                 "personal details",
                                 "education details",
                                 "previous experience",
                                 "preferred department",
                                 "preferred programming languages"
                             ]}
-                curstage={1}/>
+                curstage={1}
+                />
 ```
 
 In your react app, it would look something like the following:
 
 ```jsx
 <ProgressGraph  stages={this.state.stages}
-                        currStage={1}
-                        />
+                currStage={this.state.curStage}
+                />
 ```
 
 ## Development options
