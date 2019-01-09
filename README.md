@@ -3,6 +3,8 @@
 This is a generic journey tracker written in react. You can plug this into your codebase if you require a quick solution
 for journey tracking.
 
+Example shown in `App.js`. 
+
 ![Sample example](journey.gif "Sample example")
 
 Here, we define a generic job application workflow with `react_journey_tracker` (this is a screenshot taken from the current working version).
@@ -27,7 +29,7 @@ In your react app, it would look something like the following:
 
 ```jsx
 <ProgressGraph  stages={this.state.stages}
-                currStage={this.state.curStage}
+                currStage={this.state.currStage}
                 />
 ```
 

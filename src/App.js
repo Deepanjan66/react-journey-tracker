@@ -35,7 +35,7 @@ class App extends Component {
     return (
       <div className="App">
         <ProgressGraph  stages={this.state.stages}
-                        currStage={1}
+                        currStage={this.state.currStage}
                         />
         <input value="Previous" className="custom__button custom__red" type="button" onClick={() => this.handleStageChange(false)}/>
         <input value="Next" className="custom__button custom__green" type="button" onClick={() => this.handleStageChange(true)}/>
