@@ -3,7 +3,7 @@
 This is a generic journey tracker written in react. You can plug this into your codebase if you require a quick solution
 for journey tracking.
 
-![Sample example](https://ibb.co/5cwJM9z "Sample example")
+![Sample example](journey.gif "Sample example")
 
 Here, we define a generic job application workflow with `react_journey_tracker` (this is a screenshot taking from the current working version).
 The green nodes represent the steps that have been completed. The darker shade of blue represents the step the user is currently at. The remaining steps
@@ -12,13 +12,22 @@ have been colored with a ligher shade of blue.
 All you need for this is the following line of code:
 
 ```
- <ProgressGraph stages={[
-                                "Personal details",
-                                "Education details",
-                                "Previous experience",
-                                "Preferred department",
-                                "Preferred programming languages"
-                            ]}/>
+ <progressgraph stages={[
+                                "personal details",
+                                "education details",
+                                "previous experience",
+                                "preferred department",
+                                "preferred programming languages"
+                            ]}
+                curstage={1}/>
+```
+
+In your react app, it would look something like the following:
+
+```
+<ProgressGraph  stages={this.state.stages}
+                        currStage={1}
+                        />
 ```
 
 ## Development options

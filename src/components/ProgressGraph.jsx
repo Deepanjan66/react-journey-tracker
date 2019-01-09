@@ -9,11 +9,11 @@ import './ProgressGraph.css';
 class ProgressGraph extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            // Used to keep track of the stage
-            // the user is currently at
-            currentStage: 3
-        }
+        // this.state = {
+        //     // Used to keep track of the stage
+        //     // the user is currently at
+        //     currentStage: 3
+        // }
     }
 
     addIntermediaryEdge(index) {
@@ -21,17 +21,17 @@ class ProgressGraph extends Component {
         return "";
     }
 
-    handleStageChange() {
-        this.setState({currentStage: this.state.currentStage + 1});
-    }
+    // handleStageChange() {
+    //     this.setState({currentStage: this.state.currentStage + 1});
+    // }
 
     isCurrent(stage) {
-        if (stage === this.state.currentStage) return true;
+        if (stage === this.props.currStage) return true;
         return false;
     } 
 
     isDone(stage) {
-        if (stage < this.state.currentStage) return true;
+        if (stage < this.props.currStage) return true;
         return false;
     }
 
