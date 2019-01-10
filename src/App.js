@@ -2,13 +2,25 @@ import React, { Component } from 'react';
 import './App.css';
 import ProgressGraph from './components/ProgressGraph';
 
+/** 
+ * This component has been added to show an example
+ * usage of the ProgressGraph component. This is not
+ * part of the core journey tracker implementation
+ */
 class App extends Component {
-
 
   constructor (props) {
     super(props);
     this.state = {
+        /** This should be used to keep track
+         * of the stage the user is in
+         */
         currStage: 1,
+        /**
+         * This array represents the name of the stages 
+         * the user has to go through. ProgressGraph determines
+         * the total number of stages from the size of this array
+         */
         stages: [
             "Personal details", 
             "Education details", 
@@ -19,7 +31,18 @@ class App extends Component {
     };
   }
 
-
+  /**
+   * This handler must be supplied by the user
+   * as the responsibility of telling ProgressGraph
+   * about the current stage relies on this component
+   * 
+   * @param {boolean} progress - True if user has moved
+   * to the next step; false if user moved to the previous
+   * stage. 
+   * 
+   * This implementation should be adjusted according
+   * to the needs of the project
+   */
   handleStageChange = (progress) => {
     const currStage = this.state.currStage;
     if (progress === true) {
