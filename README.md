@@ -33,6 +33,8 @@ In your react app, it would look something like the following:
                 />
 ```
 
+Example usage shown in `src/App.js`.
+
 ## Development options
 
 In the project directory, you can run:
