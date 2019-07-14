@@ -1,4 +1,4 @@
-# React generic journey tracker [[ UNDER DEVELOPMENT ]]
+# React generic journey tracker
 
 This is a generic journey tracker written in react. You can plug this into your codebase if you require a quick solution
 for journey tracking.
@@ -15,22 +15,23 @@ All you need for this is the following line(s) of code:
 
 ```jsx
  <ProgressGraph stages={[
-                                "personal details",
-                                "education details",
-                                "previous experience",
-                                "preferred department",
-                                "preferred programming languages"
-                            ]}
-                curstage={1}
-                />
+           "personal details",
+           "education details",
+           "previous experience",
+           "preferred department",
+           "preferred programming languages"
+         ]}
+         curstage={1}
+ />
 ```
 
 In your react app, it would look something like the following:
 
 ```jsx
-<ProgressGraph  stages={this.state.stages}
-                currStage={this.state.currStage}
-                />
+<ProgressGraph  
+      stages={this.state.stages}
+      currStage={this.state.currStage}
+/>
 ```
 
 Example usage shown in `src/App.js`.
